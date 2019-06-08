@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arctic-Modal</title>
+
+    <!-- jQuery -->
+    <script src="https://yandex.st/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- arcticModal -->
+    <script src="js/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+    <script>
+        $(function(){
+            $("#showModal").click(function(){
+                $('#exampleModal').arcticmodal();
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="js/arcticmodal/jquery.arcticmodal-0.3.css">
+    <!-- arcticModal theme -->
+    <link rel="stylesheet" href="js/arcticmodal/themes/simple.css">
+</head>
+<body>
+<div style="display: none;">
+    <div class="box-modal" id="exampleModal">
+        <div class="box-modal_close arcticmodal-close">закрыть</div>
+        Пример модального окна
+    </div>
+</div>
+    <input type="button" id="showModal" value="Нажмите, чтобы появилось окно" />
+</body>
+</html>
